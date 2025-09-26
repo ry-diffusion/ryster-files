@@ -1,0 +1,47 @@
+
+
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "context_servers": {
+    "shadcn": {
+      "source": "custom",
+      "enabled": true,
+      "command": "npx",
+      "args": ["shadcn@latest", "mcp"]
+    },
+    "mcp-server-context7": {
+      "source": "extension",
+      "enabled": true,
+      "settings": {
+        "context7_api_key": {{ .context7ApiKey | quote }}
+      }
+    }
+  },
+  "agent": {
+    "default_model": {
+      "provider": "openrouter",
+      "model": "x-ai/grok-4-fast:free"
+    },
+    "always_allow_tool_actions": true
+  },
+  "features": {
+    "edit_prediction_provider": "copilot"
+  },
+  "edit_predictions": {
+    "mode": "eager"
+  },
+  "format_on_save": "on",
+  "formatter": "language_server",
+  "theme": "Carbonfox - opaque",
+  "vim_mode": true,
+  "icon_theme": "Zed (Default)",
+  "ui_font_size": 16,
+  "buffer_font_size": 15
+}

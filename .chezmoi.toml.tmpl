@@ -1,0 +1,7 @@
+{{- $context7ApiKey := promptStringOnce . "context7ApiKey" "Context7 Api Key" -}}
+
+
+[data]
+    context7ApiKey = {{ $context7ApiKey | quote }}
+
+
