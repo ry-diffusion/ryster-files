@@ -9,8 +9,8 @@
 	pager = true
 
 [user]
-	email = ry.diffusion@proton.me
-	name = Ryster 
+	email = git@zesmoi.com.br
+	name = Moizes Sousa
 	signingkey = 4BF5E8D6DC95603D675F328761BCED4163773EE2
 
 [commit]
