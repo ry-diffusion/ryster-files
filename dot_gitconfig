@@ -43,3 +43,5 @@
 
 [credential "helperselector"]
 	selected = manager
+[rerere]
+	enabled = true
