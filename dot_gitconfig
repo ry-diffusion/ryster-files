@@ -27,7 +27,9 @@
 	editor = nvim
 
 [credential]
-	helper = store
+	credentialStore = plaintext 
+	oauthAuthenticationModes = browser,devicecode
+	helper = /usr/local/bin/git-credential-manager
 
 [alias]
 	commits = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(r) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
@@ -45,3 +47,9 @@
 	selected = manager
 [rerere]
 	enabled = true
+[gpg]
+	program = gpg 
+[credential "https://dev.azure.com"]
+	useHttpPath = true
+[credential "https://git.grupomidas.com.br"]
+	provider = generic
