@@ -25,11 +25,14 @@
 [core]
 	askpass = 
 	editor = nvim
+	autocrlf = input
 
 [credential]
 	credentialStore = plaintext 
 	oauthAuthenticationModes = browser,devicecode
 	helper = /usr/local/bin/git-credential-manager
+	helper = 
+	helper = /usr/bin/git-credential-manager
 
 [alias]
 	commits = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(r) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
